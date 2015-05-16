@@ -109,13 +109,6 @@ div#role_container {
 	margin: 0 auto;
 }
 
-/*
-
-@media only screen and (min-width: 700px) {
-
-	.list {
-		margin-right: 20px;
-		display: inline-block; 
-	}
+iframe {
+	float: center;
 }
-*/
