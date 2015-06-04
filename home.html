@@ -19,11 +19,6 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- Bootstrap -->
-
-        <!--
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        -->
 
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
        
@@ -32,55 +27,110 @@
         <link rel="stylesheet" href="css/normalize.css">
         -->
 
+        <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
+
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="page">
+        
 
-            <header>    
+            <header class="header-nav">    
                 <img id="logo" src="images/logo.jpg">
 
                 <nav>
                         <ul>
-                            <li><a href="#work">Work</a></li>
+                            <li><a href="#projects">Projects</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <li><a href="#resume">Resume</a></li>
                         </ul>
                 </nav>
             </header>
 
+        <div class="page">
+
             <main>
-                <img id="headshot" src="images/home/headshot.jpg">
 
-                <p class="bio"><span style="color:#40BEBB;">Hello!</span> My name is Ana Khachatrian and I am a Los Angeles based User Experience Designer with a passion for creating experiences that will enhance or improve users' lives. I try to approach every problem with an open and curious mind. My process includes research, sketching, wireframing, prototyping, and user testing; but most importantly, asking, <span style="color:#40BEBB;">What if...</span></p>
+                <section id="about">
 
-                <section id="work" class="projects">
+                    <img id="headshot" src="images/home/headshot.jpg">
 
-                    <div id="hbogo">
+                    <p class="bio"><span style="color:#40BEBB;">Hello!</span> My name is Ana Khachatrian and I am a Los Angeles based User Experience Designer with a passion for creating experiences that will enhance or improve users' lives. I try to approach every problem with an open and curious mind. My process includes research, sketching, wireframing, prototyping, and user testing; but most importantly, asking, <span style="color:#40BEBB;">What if...</span></p>
+
+                </section>
+
+
+                <section id="projects">
+
+                    <div class="projects">
                         <img id="spacing" src="images/home/hbogo.jpg">
                         <h2>HBOGO: UX Strategy & Redesign</h2>
+                        <div class="overlay"></div>
+                        <!--<p class="what-if">What if HBOGO.com was built around a network of your friends allowing you to send and receive recommendations, and see each others reactions to a particular scene?</p>-->
                     </div>
 
-                    <img id="spacing" src="images/home/waze.jpg">
-                    <h2>Waze: Interactive Branding Experience</h2>
-                    <img id="spacing" src="images/home/observatory.jpg">
-                    <img src="images/home/rps.jpg">
-                    <img id="spacing" src="images/home/sprout.jpg">
-                    <img id="spacing" src="images/home/audiolife.jpg">
-                    <img id="spacing" src="images/home/echo.jpg">
-                    <img src="images/home/neighborhood.jpg">
-                </section>
-            </main>
+                    <div class="projects">
+                        <img id="spacing" src="images/home/waze.jpg">
+                        <h2>Waze: Interactive Branding Experience</h2>
+                    </div>
 
-            <footer>
+                    <div class="projects">
+                        <img id="spacing" src="images/home/observatory.jpg">
+                        <h2>Griffith Observatory: Interactive Branding Experience</h2>
+                    </div>
+
+                    <div class="projects">
+                        <img src="images/home/rps.jpg">
+                        <h2>Rock-Paper-Scissors: Arduino Project</h2>
+                    </div>
+
+                    <div class="projects">
+                        <img id="spacing" src="images/home/sprout.jpg">
+                        <h2>Sprout: Mobile App Design</h2>
+                    </div>
+
+                    <div class="projects">
+                        <img id="spacing" src="images/home/audiolife.jpg">
+                        <h2>Audiolife: Product Design</h2>
+                    </div>
+
+                    <div class="projects">
+                        <img id="spacing" src="images/home/echo.jpg">
+                        <h2>The Echo & Echoplex: Website Redesign</h2>
+                    </div>
+
+                    <div class="projects">
+                        <img src="images/home/neighborhood.jpg">
+                        <h2>Neighborhood Watch: Identity & Mobile App Design</h2>
+                    </div>                    
+                    
+                </section>
+
+            </main>    
+
+        </div>    
+
+                <section id="contact">
+                    <p>Get in touch!<p>
+                    <ul>
+                            <li><img src="images/home/email.svg" alt=""></li>
+                            <li><img src="images/home/twitter.svg" alt=""></li>
+                            <li><img src="images/home/linkedin.svg" alt=""></li>
+                    </ul>      
+                </section>
+
+            
+
+            <footer class="footer">
+                <p class="copyright">© 2015 Ana Khachatrian</p>
+                <p class="made">Made by Hand</p>
             </footer>
 
-        </div>
 
         
 
