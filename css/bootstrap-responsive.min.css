@@ -16,19 +16,9 @@
 .page {
 	max-width: 960px;
 	margin: 0 auto;
+	padding-top: 100px;
 }
 
-/*
-body {
-   padding: 0px 0 50px 0;
-   font-size: 16px;
-   min-height: 100%;
-   font-family: Georgia;
-   font-weight: 400;
-   font-style: normal;
-   line-height: 25px;
-}
-*/
 
 h1 {
    font-size: 28px;
@@ -45,7 +35,7 @@ h3 {
    margin-bottom: 25px;
    font-weight: 300;
    font-style: normal;
-   font-size: 24px;
+   font-size: 20px;
    font-family: 'Roboto', Avenir, Helvetica, sans-serif;
    color: rgba(11, 113, 137, 1);
    text-align: center;
@@ -124,46 +114,98 @@ iframe {
 	margin: 0 auto;
 }
 
+.project-nav {
+	background-color: #2FBDBB;
+	position: relative;
+	clear: both;
+}
+
+.previous {
+	background-color: #2FBDBB;
+	position: absolute;
+	/*padding-left: 10px;*/
+	display: inline-block;
+	width: 100%;
+}
+
+.previous img {
+	float: left;
+	padding-left: 50px;
+}
+
+.previous p {
+	color: white;
+	font-family: 'Roboto', Avenir, Helvetica, sans-serif;
+	font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
 /* ==========================================================================
    HOME PAGE STYLES
    ========================================================================== */
+
+body {
+	margin: 0;
+}
 
 .homepage {
 	margin: 0 auto;
 	max-width: 90%;
 }
 
-.header-nav {
+.nav-bar {
 	position: fixed;
 	z-index: 99;
 	width: 100%;
 	top: 0;	
-}
-
-.nav-bar {
 	background-color: white;
 	opacity: 0.9;
-	line-height: 3em;
-	width: 100%;
+	line-height: 1em;
 }
+
 
 nav ul {
 	right: 0;
 	text-align: right;
-	padding-right: 1em;
+	padding-right: 1.5em;
 }
 
 nav li {
 	display: inline-block;
-	
-	text-decoration: none;
+	/*text-decoration: none;*/
 	font-family: 'Roboto', Avenir, Helvetica, sans-serif;
 	font-weight: 400;
     font-style: normal;
     font-size: 18px;
-    color: #58585B;
     padding: .5em;
     margin-top: 1em;
+}
+
+/* unvisited link */
+nav li a:link {
+    color: #58585B;
+    text-decoration: none;
+}
+
+/* visited link */
+nav li a:visited {
+    color: #561F37;
+}
+
+/* mouse over link */
+nav li a:hover {
+    color: #2FBDBB;
+}
+
+/* selected link */
+nav li a:active {
+    color: #3E8989;
+}
+
+#about {
+	margin: 0 auto;
+	width: 90%;
 }
 
 #logo {
@@ -192,6 +234,8 @@ nav li {
 
 
 #projects {
+	margin: 0 auto;
+	width: 90%;
 	padding-top: 70px;
 	padding-bottom: 70px;
 	clear: both;
@@ -199,42 +243,57 @@ nav li {
 
 .projects {
 	display: inline-block;
-	position: relative;
-	z-index: 1;
+max-width: 400px;
+vertical-align: top;	
+	/*position: relative;*/
+	/*z-index: 1;*/
+	/*padding-top: 0; /* was 20px */
 }
 
 .projects img {
+	/*position: relative;*/
 	padding: 10px;
 	border: solid 2px #2FBDBB;
-}
+max-width: 100%;
+display: block;
 
-/*
-.projects:hover .overlay {
-	opacity: 0.9;
+-webkit-box-sizing: border-box; /* Android ≤ 2.3, iOS ≤ 4 */
+     -moz-box-sizing: border-box; /* Firefox ≤ 28 */
+          box-sizing: border-box; /* Chrome, Firefox 29+, IE 8+, Opera, Safari 5.1 */
 }
-
-  
 
 .overlay {
-	bottom: 30px; left: 0; top: 0; right: 0;
-	background-color: #2FBDBB;
-	opacity: 0;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	-webkit-transition: opacity .5s ease;
-	-moz-transition: opacity .5s ease;
-}
-
-*/
-
-
-.overlay:hover .what-if {
-	opacity: .9;
+	position: relative;
 }
 
 .what-if {
+	background-color: rgba(47, 189, 187, 0.9);
+	font-family: 'Roboto', Avenir, Helvetica, sans-serif;
+	font-weight: 400;
+    font-size: 1.25em;
+    color: white;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.what-if:hover {
+	opacity: 0.9;
+}
+
+/*.overlay:hover .what-if {
+	opacity: .9;
+}*/
+
+/*.what-if {
 	bottom: 35px; left: 0px; top: 0; right: 5px;
+	overflow: hidden;
 	opacity: 0;
 	color: white;
 	background-color: rgba(47, 189, 187, 0.9);
@@ -243,23 +302,26 @@ nav li {
     font-size: 1.25em;
     position: absolute;
     padding: 20px 20px 120px 20px;
-} 
+
+width: 100%;
+
+}*/
+
 
 h2 {
-	margin: 0;
-	padding: 0;
+	/*margin: 0;
+	padding: 0;*/
 	font-family: 'Roboto', Avenir, Helvetica, sans-serif;
 	font-weight: 400;
     font-size: 18px;
     color: #58585B;
 }
 
-
-#spacing {
+/*#spacing {
 	margin-right: 5px;
-} 
+} */
 
-
+/*ADD A CLEAR:BOTH TO THE FOOTER*/
 
 #contact {
 	width: 100%;
@@ -267,7 +329,20 @@ h2 {
 	background-color: #2FBDBB;
 }
 
-#contact p {
+.contact-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-buttons {
+	margin: 0 auto;
+	width: -webkit-fit-content;
+     width: -moz-fit-content;
+          width: fit-content;
+  /* @extend .clearfix; */
+}
+
+/*#contact p {
 	text-align: center;
 	color: white;
 	font-family: 'Roboto', Avenir, Helvetica, sans-serif;
@@ -275,9 +350,11 @@ h2 {
     font-style: normal;
     font-size: 32px;
     padding-top: 25px;
-}
+}*/
 
 #contact li {
+	max-width: 600px;
+	margin: 0 auto;
 	list-style: none;
 	display: inline-block;
 	padding: 0 1.5em;
@@ -286,11 +363,11 @@ h2 {
 
 .footer {
 	position: relative;
-	background-color: #58585B;
+	/*background-color: #58585B;*/
     padding: 15px;
     clear: both;
-    min-height: 20px;
-    top: 0;
+    min-height: 15px;
+    /*top: 0;*/
 }
 
 .footer p {
@@ -299,7 +376,7 @@ h2 {
 	font-weight: 300;
 	font-style: light;
     font-size: 14px;
-    color: white;
+    color: #2FBDBB;
     position: absolute;
 }
 
