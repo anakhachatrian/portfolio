@@ -10,13 +10,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+        <!-- <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'> -->
         <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
          <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
 
     
         <title>HBOGO: UX Strategy</title>
-        <meta name="description" content="A portfolio for Ana Khachatrian, a user experience designer based in Los Angeles.">
+        <meta name="description" content="A website redesign and user experience strategy for HBOGO.com.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
          <link rel="icon" type="image/png" href="favicon.ico">
@@ -46,18 +46,19 @@
          <header> 
                 <div class="nav-bar"> 
                   
-                    <a href="home.html"><img id="logo" src="images/logo.jpg"></a>
+                    <a href="index.html"><img id="logo" src="images/logo.jpg"></a>
 
                     <nav>
                             <ul>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="index.html#projects">Projects</a></li>
+                                <li><a href="index.html#contact">Contact</a></li>
                                 <li><a href="resume.pdf">Resume</a></li>
                             </ul>
                     </nav>
 
                 </div>
         </header>
+        
 
         <main class="page">
 
@@ -74,7 +75,7 @@
                 <figcaption><i>Two personas developed based on initial research and user interviews.</i></figcaption>
             </figure>
             
-            <p>Each principle was presented with a sketch highlighting some of the new features. CLICK HERE to view the UX strategy presentation slides.</p>
+            <p>Each principle was presented with a sketch highlighting some of the new features. <a href="https://www.dropbox.com/s/tzcnofye51uahyt/anaK-hbogo-strategic-ux-presentation-v2.pdf?dl=0">CLICK HERE</a> to view the UX strategy presentation slides.</p>
 
             
            <img class="border" src="images/hbogo/principles1.jpg">
@@ -121,21 +122,38 @@
                             <li>Keynote</li>
                         </ul>
                 </div>
+
             </div>
 
         </main>
 
-          <div class="project-nav">
-                <div class="previous">
-                    <img src="images/previous.svg" alt="">
-                    <p>Previous Project<p>
-                </div>    
+
+        <div class="project-nav">
+
+            <div class="previous">
+                <a class="previous-link" href="neighborhood-watch.html">
+                    <span id="pre-arrow"><img src="images/previous.svg" alt=""></span>
+                    <span id="pre-label">Previous<span>
+                 </a>         
             </div>  
+           
+            <div class="next">
+                <a class="next-link" href="waze.html">
+                    <span id="next-label">Next</span>
+                    <span id="next-arrow"><img src="images/next.svg" alt=""></span>
+                </a>
+            </div>  
+
+        </div> 
+
+
+
 
         <footer class="footer">
                 <p class="copyright">© 2015 Ana Khachatrian</p>
                 <p class="made">Made by Hand</p>
-            </footer>
+        </footer>
+
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

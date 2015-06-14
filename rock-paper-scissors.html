@@ -10,14 +10,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Glegoo' rel='stylesheet' type='text/css'>
 
     
-        <title>Ana Khachatrian's UX Portfolio</title>
-        <meta name="description" content="A portfolio for Ana Khachatrian, a user experience designer based in Los Angeles.">
+        <title>Rock-Paper-Scissors: Arduino Project</title>
+        <meta name="description" content="A remake of the classic childhood game, rock-paper-scissors, with the Arudino.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="icon" type="image/png" href="favicon.ico">
 
         <!-- Bootstrap -->
 
@@ -41,13 +42,31 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="page">
+        <header> 
+                <div class="nav-bar"> 
+                  
+                    <a href="index.html"><img id="logo" src="images/logo.jpg"></a>
+
+                    <nav>
+                            <ul>
+                                <li><a href="index.html#projects">Projects</a></li>
+                                <li><a href="index.html#contact">Contact</a></li>
+                                <li><a href="resume.pdf">Resume</a></li>
+                            </ul>
+                    </nav>
+
+                </div>
+        </header>
+
+        <main class="page">
 
             <h1>Rock-Paper-Scissors: Arduino Project</h1>
 
             <h3>What if you could play Rock-Paper-Scissors against a machine?</h3>
 
-            <iframe src="https://player.vimeo.com/video/98460110?color=ff9933&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/98460110?color=ff9933&portrait=0" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
 
             <p>For my first project with the Arduino, I wanted to explore usability as well as form, so I decided to work on a game. It had to be something that someone would instinctively know how to play once they approached it, without any sort of direction. This is what led me to recreate the classic childhood game, Rock-Paper-Scissors, using LEDs, a slide potentiometer and a piezo.</p>
 
@@ -90,7 +109,32 @@
                         </ul>
                 </div>
             </div>
-         </div>   
+
+         </main>   
+
+         <div class="project-nav">
+
+            <div class="previous">
+                <a class="previous-link" href="griffith-observatory.html">
+                    <span id="pre-arrow"><img src="images/previous.svg" alt=""></span>
+                    <span id="pre-label">Previous<span>
+                 </a>         
+            </div>  
+           
+            <div class="next">
+                <a class="next-link" href="sprout.html">
+                    <span id="next-label">Next</span>
+                    <span id="next-arrow"><img src="images/next.svg" alt=""></span>
+                </a>
+            </div>  
+
+        </div> 
+
+
+        <footer class="footer">
+                <p class="copyright">© 2015 Ana Khachatrian</p>
+                <p class="made">Made by Hand</p>
+        </footer>
 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
