@@ -19,19 +19,19 @@
         <meta name="description" content="A portfolio for Ana Khachatrian, a user experience designer based in Los Angeles.">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="icon" type="image/png" href="favicon.ico">
+        <link rel="icon" type="image/png" href="portfolio/favicon.ico">
 
 
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-       
+        <link rel="stylesheet" href="css/style.css">
 
-        <!--
-        <link rel="stylesheet" href="css/normalize.css">
-        -->
+        <!-- Normalize hide address bar for iOS and Android -->
+        <script src="./js/hideaddressbar.js"></script>
+
+        <!-- Media query support for IE8 and under -->
+        <script src=".js/respond.min.js"></script>
 
         <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 
     <body>
@@ -45,7 +45,7 @@
             <header> 
                 <div class="nav-bar"> 
                   
-                    <a href="index.html"><img id="logo" src="images/logo.jpg"></a>
+                    <a href="index.html"><img id="logo" src="images/logo.svg"></a>
 
                     <nav>
                             <ul>
@@ -64,9 +64,9 @@
 
                 <section id="about">
 
-                    <img id="headshot" src="images/home/headshot.jpg">
+                    <div id="headshot"><img src="images/home/headshot.jpg"></div>
 
-                    <p class="bio"><span style="color:#40BEBB;">Hello!</span> My name is Ana Khachatrian and I am a Los Angeles based User Experience Designer with a passion for creating experiences that will enhance or improve users' lives. I try to approach every problem with an open and curious mind. My process includes research, sketching, wireframing, prototyping, and user testing; but most importantly, asking, <span style="color:#40BEBB;">What if...</span></p>
+                    <div id="bio"><p><span style="color:#40BEBB;">Hello!</span> My name is Ana Khachatrian and I am a Los Angeles based User Experience Designer with a passion for creating experiences that will enhance or improve users' lives. I try to approach every problem with an open and curious mind. My process includes research, sketching, wireframing, prototyping, and user testing; but most importantly, asking, <span style="color:#40BEBB;">What if...</span></p></div>
 
                 </section>
 
@@ -77,7 +77,7 @@
                     <div class="projects">
                         <a href="hbogo.html">
                             <div class="overlay">
-                                <img id="spacing" src="images/home/hbogo.jpg">
+                                <img src="images/home/hbogo.jpg">
                                 <p class="what-if">What if HBOGO.com was built around a network of your friends allowing you to send and receive recommendations, and see each others reactions to a particular scene?</p>
                             </div>
                         </a>
@@ -88,7 +88,7 @@
                     <div class="projects">
                         <a href="waze.html">
                             <div class="overlay">
-                            <img id="spacing" src="images/home/waze.jpg">
+                            <img src="images/home/waze.jpg">
                             <p class="what-if">What if Waze could help create driverless cities?</p>
                             </div>
                         </a>    
@@ -110,7 +110,7 @@
                     <div class="projects">
                         <a href="rock-paper-scissors.html">
                             <div class="overlay">
-                            <img id="spacing" src="images/home/rps.jpg">
+                            <img src="images/home/rps.jpg">
                             <p class="what-if">What if you could play Rock-Paper-Scissors against a machine?</p>
                             </div>
                         </a>
@@ -121,7 +121,7 @@
                     <div class="projects">
                         <a href="sprout.html">
                             <div class="overlay">
-                            <img id="spacing" src="images/home/sprout.jpg">
+                            <img src="images/home/sprout.jpg">
                             <p class="what-if">What if you could plan and maintain a vegetable garden using your mobile phone?</p> 
                             </div>
                         </a>
@@ -132,7 +132,7 @@
                     <div class="projects">
                         <a href="audiolife.html">
                             <div class="overlay">
-                            <img id="spacing" src="images/home/audiolife.jpg">
+                            <img src="images/home/audiolife.jpg">
                             <p class="what-if">What if indie musicians could get their music & merch into major retailers without the need for a distribution deal?</p>
                             </div>
                         </a>
@@ -143,7 +143,7 @@
                     <div class="projects">
                         <a href="echo.html">
                             <div class="overlay">
-                            <img id="spacing" src="images/home/echo.jpg">
+                            <img src="images/home/echo.jpg">
                             <p class="what-if">What if a local music venue could improve their user experience to better engage with music fans and concert attendees?</p>
                             </div>
                         </a>
@@ -188,23 +188,5 @@
                 <p class="made">Made by Hand</p>
             </footer>
 
-
-        
-
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
     </body>
 </html>
